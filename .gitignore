@@ -1,0 +1,12 @@
+# Ignore node_modules and build artifacts
+/frontend/node_modules/
+/frontend/build/
+/backend/node_modules/
+/backend/build/
+
+# Ignore environment files (for sensitive information)
+.env
+
+# Ignore logs and temporary files
+/logs/
+/tmp/
