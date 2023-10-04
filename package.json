@@ -6,10 +6,12 @@
   "author": "Yash Pandey",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend-watch\" \"npm run start-backend\"",
     "start-frontend": "cd frontend && npm start",
-    "start-backend": "cd backend && node src/server.ts"
+    "start-backend": "cd backend && nodemon dist/server.js",
+    "start-backend-watch": "cd backend && tsc --watch"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }

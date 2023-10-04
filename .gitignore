@@ -3,6 +3,7 @@
 /frontend/build/
 /backend/node_modules/
 /backend/build/
+/node_modules/
 
 # Ignore environment files (for sensitive information)
 .env
